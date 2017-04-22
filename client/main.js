@@ -15,6 +15,11 @@ var img_data =[ {
 
 Template.images.helpers({images:img_data});
 
+Template.images.events({
+  'click .js-image':function(event) {
+    $(event.target).css("width", "50px");
+  }
+});
 /*
 
 import { Template } from 'meteor/templating';
